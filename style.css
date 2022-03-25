@@ -1,0 +1,124 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F5F7FB;
+}
+main {
+  background-color: #F5F7FB;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('..public/blobs-blue.png'), url('../pulic/blobs-yellow.png');
+  background-position: bottom left, top right;
+  background-repeat: no-repeat;
+  padding: 2% 8%;
+}
+
+/* Welcome Page */
+.title{
+  text-align: center;
+
+}
+
+.title h2{
+  color: #293264;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.title p{
+  color: #293264;
+  margin: 20px 0 30px;
+}
+
+.title-button,
+ .quiz-button{
+  background-color: #4D5B9E;
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  color: #F5F7FB;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+
+}
+
+.title-button:active, .quiz-button:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Question Page */
+
+.question {
+  color: #293264;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+/* Choice Page */
+.choice-button{
+  min-width:80px;
+  padding: 5px 10px;
+  border: 1px solid #4D5B9E;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color:#293264;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+}
+
+.choice-container{
+  display: flex;
+  padding-bottom: 15px;
+  justify-content:flex-start;
+  margin: 10px 0 20px;
+  border-bottom: 1px solid;
+  border-color: #DBDEF0;
+}
+
+/* QuizBoard Page */
+.quiz-board {
+  text-align: center;
+  padding: 0.8rem;
+  height: 90vh;
+
+}
+
+/* QuizCard  */
+
+.quiz-card {
+  text-align: left;
+  margin: auto;
+}
+
+/* result  */
+.result {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.result-tile  {
+  color: #293264;
+  font-size: 1.5rem;
+  font-family: 'Karla', sans-serif;
+}
